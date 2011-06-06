@@ -11,9 +11,9 @@
               jucerVersion="3.0.0">
   <EXPORTFORMATS>
     <XCODE_MAC targetFolder="Builds/MacOSX" vstFolder="~/SDKs/vstsdk2.4" rtasFolder="~/SDKs/PT_80_SDK"
-               objCExtraSuffix="yecjFZ" juceFolder="..\..\Documents\Dropbox\AudioProcessing\juce_1_52"/>
+               objCExtraSuffix="yecjFZ" juceFolder="/Users/nick/programming/SDKs/juce"/>
     <XCODE_IPHONE targetFolder="Builds/iOS" vstFolder="~/SDKs/vstsdk2.4" rtasFolder="~/SDKs/PT_80_SDK"
-                  objCExtraSuffix="nifqI" juceFolder="..\..\Documents\Dropbox\AudioProcessing\juce_1_52"/>
+                  objCExtraSuffix="nifqI" juceFolder="/Users/nick/programming/SDKs/juce"/>
     <MSVC6 targetFolder="Builds/MSVC6" vstFolder="c:\SDKs\vstsdk2.4" rtasFolder="c:\SDKs\PT_80_SDK"
            libraryType="1" juceFolder="..\..\Documents\Dropbox\AudioProcessing\juce_1_52"/>
     <VS2005 targetFolder="Builds/VisualStudio2005" vstFolder="c:\SDKs\vstsdk2.4"
@@ -24,18 +24,22 @@
             rtasFolder="c:\SDKs\PT_80_SDK" libraryType="1" juceFolder="..\..\Documents\Dropbox\AudioProcessing\juce_1_52"/>
   </EXPORTFORMATS>
   <CONFIGURATIONS>
-    <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="skinTest"/>
-    <CONFIGURATION name="Release" isDebug="0" optimisation="2" targetName="skinTest"/>
+    <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="skinTest"
+                   osxSDK="default" osxCompatibility="default" osxArchitecture="32BitUniversal"/>
+    <CONFIGURATION name="Release" isDebug="0" optimisation="2" targetName="skinTest"
+                   osxSDK="default" osxCompatibility="default" osxArchitecture="32BitUniversal"/>
   </CONFIGURATIONS>
   <MAINGROUP id="klXCyt" name="skinTest">
     <GROUP id="LE9gMx" name="Source">
-      <GROUP id="lQCwxy" name="lookandfeel">
-        <FILE id="RWOuLV" name="LookAndFeelN.cpp" compile="1" resource="0"
-              file="Source\lookandfeel\LookAndFeelN.cpp"/>
-        <FILE id="mB8feR" name="LookAndFeelN.h" compile="0" resource="0" file="Source\lookandfeel\LookAndFeelN.h"/>
-        <FILE id="xQmuGs" name="LookAndFeelO.cpp" compile="1" resource="0"
-              file="Source\lookandfeel\LookAndFeelO.cpp"/>
-        <FILE id="r6Z5hY" name="LookAndFeelO.h" compile="0" resource="0" file="Source\lookandfeel\LookAndFeelO.h"/>
+      <GROUP id="TpBIil" name="lookandfeel">
+        <FILE id="tHMYr6" name="jucetice_ImageKnob.cpp" compile="1" resource="0"
+              file="Source/lookandfeel/jucetice_ImageKnob.cpp"/>
+        <FILE id="LhHVrb" name="jucetice_ImageKnob.h" compile="0" resource="0"
+              file="Source/lookandfeel/jucetice_ImageKnob.h"/>
+        <FILE id="WcXWPv" name="LookAndFeelCustom.cpp" compile="1" resource="0"
+              file="Source/lookandfeel/LookAndFeelCustom.cpp"/>
+        <FILE id="i0ge8T" name="LookAndFeelCustom.h" compile="0" resource="0"
+              file="Source/lookandfeel/LookAndFeelCustom.h"/>
       </GROUP>
       <FILE id="WIh0J" name="widgetBox.h" compile="0" resource="0" file="Source\widgetBox.h"/>
       <FILE id="KG3pOo" name="widgetBox.cpp" compile="1" resource="0" file="Source\widgetBox.cpp"/>

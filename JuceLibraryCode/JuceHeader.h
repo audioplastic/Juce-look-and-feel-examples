@@ -10,8 +10,8 @@
 
 */
 
-#ifndef __APPHEADERFILE_75A0C977__
-#define __APPHEADERFILE_75A0C977__
+#ifndef __APPHEADERFILE_C94B50FF__
+#define __APPHEADERFILE_C94B50FF__
 
 #include "AppConfig.h"
 #if defined (JUCER_VS2010_78A501D)
@@ -23,9 +23,9 @@
 #elif defined (JUCER_MSVC6_734A9119)
  #include "../../../Documents/Dropbox/AudioProcessing/juce_1_52/juce_amalgamated.h"
 #elif defined (JUCER_XCODE_IPHONE_5BC26AE3)
- #include "../../../Documents/Dropbox/AudioProcessing/juce_1_52/juce_amalgamated.h"
+ #include "/Users/nick/programming/SDKs/juce/juce_amalgamated.h"
 #elif defined (JUCER_XCODE_MAC_F6D2F4CF)
- #include "../../../Documents/Dropbox/AudioProcessing/juce_1_52/juce_amalgamated.h"
+ #include "/Users/nick/programming/SDKs/juce/juce_amalgamated.h"
 #endif
 
 namespace ProjectInfo
@@ -35,4 +35,4 @@ namespace ProjectInfo
     const int          versionNumber  = 0x10000;
 }
 
-#endif   // __APPHEADERFILE_75A0C977__
+#endif   // __APPHEADERFILE_C94B50FF__

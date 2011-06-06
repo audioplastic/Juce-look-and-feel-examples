@@ -130,10 +130,10 @@
     <Filter Name="skinTest">
       <Filter Name="Source">
         <Filter Name="lookandfeel">
-          <File RelativePath="..\..\Source\lookandfeel\LookAndFeelN.cpp"/>
-          <File RelativePath="..\..\Source\lookandfeel\LookAndFeelN.h"/>
-          <File RelativePath="..\..\Source\lookandfeel\LookAndFeelO.cpp"/>
-          <File RelativePath="..\..\Source\lookandfeel\LookAndFeelO.h"/>
+          <File RelativePath="..\..\Source\lookandfeel\jucetice_ImageKnob.cpp"/>
+          <File RelativePath="..\..\Source\lookandfeel\jucetice_ImageKnob.h"/>
+          <File RelativePath="..\..\Source\lookandfeel\LookAndFeelCustom.cpp"/>
+          <File RelativePath="..\..\Source\lookandfeel\LookAndFeelCustom.h"/>
         </Filter>
         <File RelativePath="..\..\Source\widgetBox.h"/>
         <File RelativePath="..\..\Source\widgetBox.cpp"/>

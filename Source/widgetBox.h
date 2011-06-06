@@ -3,7 +3,7 @@
 
   This is an automatically generated file created by the Jucer!
 
-  Creation date:  6 Jun 2011 12:47:33pm
+  Creation date:  6 Jun 2011 8:32:58pm
 
   Be careful when adding custom code to these files, as only the code within
   the "//[xyz]" and "//[/xyz]" sections will be retained when the file is loaded
@@ -19,11 +19,12 @@
   ==============================================================================
 */
 
-#ifndef __JUCER_HEADER_WIDGETBOX_WIDGETBOX_378CDD6D__
-#define __JUCER_HEADER_WIDGETBOX_WIDGETBOX_378CDD6D__
+#ifndef __JUCER_HEADER_WIDGETBOX_WIDGETBOX_2E7B2BAA__
+#define __JUCER_HEADER_WIDGETBOX_WIDGETBOX_2E7B2BAA__
 
 //[Headers]     -- You can add your own extra header files here --
 #include "../JuceLibraryCode/JuceHeader.h"
+#include "lookandfeel/LookAndFeelCustom.h"
 //[/Headers]
 
 
@@ -57,13 +58,13 @@ public:
     void buttonClicked (Button* buttonThatWasClicked);
 
 
-
     //==============================================================================
     juce_UseDebuggingNewOperator
 
 private:
     //[UserVariables]   -- You can add your own custom variables in this section.
 	OldSchoolLookAndFeel oldLookAndFeel;
+    LookAndFeelCustom customLookAndFeel;
     //[/UserVariables]
 
     //==============================================================================
@@ -74,7 +75,6 @@ private:
     ToggleButton* toggleButton;
     TextButton* textButton;
 
-
     //==============================================================================
     // (prevent copy constructor and operator= being generated..)
     widgetBox (const widgetBox&);
@@ -82,4 +82,4 @@ private:
 };
 
 
-#endif   // __JUCER_HEADER_WIDGETBOX_WIDGETBOX_378CDD6D__
+#endif   // __JUCER_HEADER_WIDGETBOX_WIDGETBOX_2E7B2BAA__
