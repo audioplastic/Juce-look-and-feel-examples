@@ -1,0 +1,9 @@
+*.ncb
+*.user
+*.suo
+*.exe
+
+*.rsp
+*.idb
+*.pdb
+*.obj

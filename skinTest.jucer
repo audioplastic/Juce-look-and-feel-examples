@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="zh5OnD" name="skinTest" projectType="guiapp" version="1.0.0"
+              juceLinkage="amalg_multi" buildVST="1" buildRTAS="0" buildAU="1"
+              pluginName="Juce Project" pluginDesc="Juce Project" pluginManufacturer="yourcompany"
+              pluginManufacturerCode="Manu" pluginCode="Plug" pluginChannelConfigs="{1, 1}, {2, 2}"
+              pluginIsSynth="0" pluginWantsMidiIn="0" pluginProducesMidiOut="0"
+              pluginSilenceInIsSilenceOut="0" pluginTailLength="0" pluginEditorRequiresKeys="0"
+              pluginAUExportPrefix="JuceProjectAU" pluginAUViewClass="JuceProjectAU_V1"
+              pluginRTASCategory="" bundleIdentifier="com.yourcompany.skinTest"
+              jucerVersion="3.0.0">
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX" vstFolder="~/SDKs/vstsdk2.4" rtasFolder="~/SDKs/PT_80_SDK"
+               objCExtraSuffix="yecjFZ" juceFolder="..\..\Documents\Dropbox\AudioProcessing\juce_1_52"/>
+    <XCODE_IPHONE targetFolder="Builds/iOS" vstFolder="~/SDKs/vstsdk2.4" rtasFolder="~/SDKs/PT_80_SDK"
+                  objCExtraSuffix="nifqI" juceFolder="..\..\Documents\Dropbox\AudioProcessing\juce_1_52"/>
+    <MSVC6 targetFolder="Builds/MSVC6" vstFolder="c:\SDKs\vstsdk2.4" rtasFolder="c:\SDKs\PT_80_SDK"
+           libraryType="1" juceFolder="..\..\Documents\Dropbox\AudioProcessing\juce_1_52"/>
+    <VS2005 targetFolder="Builds/VisualStudio2005" vstFolder="c:\SDKs\vstsdk2.4"
+            rtasFolder="c:\SDKs\PT_80_SDK" libraryType="1" juceFolder="..\..\Documents\Dropbox\AudioProcessing\juce_1_52"/>
+    <VS2008 targetFolder="Builds/VisualStudio2008" vstFolder="c:\SDKs\vstsdk2.4"
+            rtasFolder="c:\SDKs\PT_80_SDK" libraryType="1" juceFolder="c:\SDKs\juce"/>
+    <VS2010 targetFolder="Builds/VisualStudio2010" vstFolder="c:\SDKs\vstsdk2.4"
+            rtasFolder="c:\SDKs\PT_80_SDK" libraryType="1" juceFolder="..\..\Documents\Dropbox\AudioProcessing\juce_1_52"/>
+  </EXPORTFORMATS>
+  <CONFIGURATIONS>
+    <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="skinTest"/>
+    <CONFIGURATION name="Release" isDebug="0" optimisation="2" targetName="skinTest"/>
+  </CONFIGURATIONS>
+  <MAINGROUP id="klXCyt" name="skinTest">
+    <GROUP id="LE9gMx" name="Source">
+      <GROUP id="lQCwxy" name="lookandfeel">
+        <FILE id="RWOuLV" name="LookAndFeelN.cpp" compile="1" resource="0"
+              file="Source\lookandfeel\LookAndFeelN.cpp"/>
+        <FILE id="mB8feR" name="LookAndFeelN.h" compile="0" resource="0" file="Source\lookandfeel\LookAndFeelN.h"/>
+        <FILE id="xQmuGs" name="LookAndFeelO.cpp" compile="1" resource="0"
+              file="Source\lookandfeel\LookAndFeelO.cpp"/>
+        <FILE id="r6Z5hY" name="LookAndFeelO.h" compile="0" resource="0" file="Source\lookandfeel\LookAndFeelO.h"/>
+      </GROUP>
+      <FILE id="WIh0J" name="widgetBox.h" compile="0" resource="0" file="Source\widgetBox.h"/>
+      <FILE id="KG3pOo" name="widgetBox.cpp" compile="1" resource="0" file="Source\widgetBox.cpp"/>
+      <FILE id="qQYqn" name="MainWindow.cpp" compile="1" resource="0" file="Source\MainWindow.cpp"/>
+      <FILE id="ZmxAYC" name="MainWindow.h" compile="0" resource="0" file="Source\MainWindow.h"/>
+      <FILE id="JyCIUu" name="Main.cpp" compile="1" resource="0" file="Source\Main.cpp"/>
+    </GROUP>
+  </MAINGROUP>
+  <JUCEOPTIONS JUCE_FORCE_DEBUG="default" JUCE_LOG_ASSERTIONS="default" JUCE_ASIO="default"
+               JUCE_WASAPI="default" JUCE_DIRECTSOUND="default" JUCE_ALSA="default"
+               JUCE_QUICKTIME="default" JUCE_OPENGL="default" JUCE_DIRECT2D="default"
+               JUCE_USE_FLAC="default" JUCE_USE_OGGVORBIS="default" JUCE_USE_CDBURNER="default"
+               JUCE_USE_CDREADER="default" JUCE_USE_CAMERA="default" JUCE_ENABLE_REPAINT_DEBUGGING="default"
+               JUCE_USE_XINERAMA="default" JUCE_USE_XSHM="default" JUCE_USE_XRENDER="default"
+               JUCE_USE_XCURSOR="default" JUCE_PLUGINHOST_VST="default" JUCE_PLUGINHOST_AU="default"
+               JUCE_ONLY_BUILD_CORE_LIBRARY="default" JUCE_WEB_BROWSER="default"
+               JUCE_SUPPORT_CARBON="default" JUCE_CHECK_MEMORY_LEAKS="default"
+               JUCE_CATCH_UNHANDLED_EXCEPTIONS="default"/>
+</JUCERPROJECT>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="skinTest">
+      <UniqueIdentifier>{383434F4-5D8A-7B67-4C34-506E87E0F808}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="skinTest\Source">
+      <UniqueIdentifier>{74B47FAA-011D-1ED8-599F-F78F714AEE61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="skinTest\Source\lookandfeel">
+      <UniqueIdentifier>{AFFE37D2-9B8A-C9B1-9C09-CB2A2309334D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Juce Library Code">
+      <UniqueIdentifier>{F7048EA6-F4B2-F31B-E402-E05D678A1111}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Source\lookandfeel\LookAndFeelN.cpp">
+      <Filter>skinTest\Source\lookandfeel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\lookandfeel\LookAndFeelO.cpp">
+      <Filter>skinTest\Source\lookandfeel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\widgetBox.cpp">
+      <Filter>skinTest\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\MainWindow.cpp">
+      <Filter>skinTest\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Main.cpp">
+      <Filter>skinTest\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JuceLibraryCode\JuceLibraryCode1.cpp">
+      <Filter>Juce Library Code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JuceLibraryCode\JuceLibraryCode2.cpp">
+      <Filter>Juce Library Code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JuceLibraryCode\JuceLibraryCode3.cpp">
+      <Filter>Juce Library Code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JuceLibraryCode\JuceLibraryCode4.cpp">
+      <Filter>Juce Library Code</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Source\lookandfeel\LookAndFeelN.h">
+      <Filter>skinTest\Source\lookandfeel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\lookandfeel\LookAndFeelO.h">
+      <Filter>skinTest\Source\lookandfeel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\widgetBox.h">
+      <Filter>skinTest\Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\MainWindow.h">
+      <Filter>skinTest\Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\JuceLibraryCode\AppConfig.h">
+      <Filter>Juce Library Code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\JuceLibraryCode\JuceHeader.h">
+      <Filter>Juce Library Code</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

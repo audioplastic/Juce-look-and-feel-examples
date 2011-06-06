@@ -1,0 +1,19 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual C++ Express 2008
+Project("{DFECADC0-2265-3601-AEE1-6170EEE94C3A}") = "skinTest", "skinTest.vcproj", "{E3F080DC-402D-77C2-2823-0AA8EFDA01DA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E3F080DC-402D-77C2-2823-0AA8EFDA01DA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E3F080DC-402D-77C2-2823-0AA8EFDA01DA}.Debug|Win32.Build.0 = Debug|Win32
+		{E3F080DC-402D-77C2-2823-0AA8EFDA01DA}.Release|Win32.ActiveCfg = Release|Win32
+		{E3F080DC-402D-77C2-2823-0AA8EFDA01DA}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
