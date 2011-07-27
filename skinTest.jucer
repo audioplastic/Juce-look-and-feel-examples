@@ -32,10 +32,6 @@
   <MAINGROUP id="klXCyt" name="skinTest">
     <GROUP id="LE9gMx" name="Source">
       <GROUP id="TpBIil" name="lookandfeel">
-        <FILE id="tHMYr6" name="jucetice_ImageKnob.cpp" compile="1" resource="0"
-              file="Source/lookandfeel/jucetice_ImageKnob.cpp"/>
-        <FILE id="LhHVrb" name="jucetice_ImageKnob.h" compile="0" resource="0"
-              file="Source/lookandfeel/jucetice_ImageKnob.h"/>
         <FILE id="WcXWPv" name="LookAndFeelCustom.cpp" compile="1" resource="0"
               file="Source/lookandfeel/LookAndFeelCustom.cpp"/>
         <FILE id="i0ge8T" name="LookAndFeelCustom.h" compile="0" resource="0"

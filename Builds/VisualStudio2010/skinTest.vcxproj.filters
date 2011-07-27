@@ -16,9 +16,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Source\lookandfeel\jucetice_ImageKnob.cpp">
-      <Filter>skinTest\Source\lookandfeel</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\Source\lookandfeel\LookAndFeelCustom.cpp">
       <Filter>skinTest\Source\lookandfeel</Filter>
     </ClCompile>
@@ -45,9 +42,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Source\lookandfeel\jucetice_ImageKnob.h">
-      <Filter>skinTest\Source\lookandfeel</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\Source\lookandfeel\LookAndFeelCustom.h">
       <Filter>skinTest\Source\lookandfeel</Filter>
     </ClInclude>

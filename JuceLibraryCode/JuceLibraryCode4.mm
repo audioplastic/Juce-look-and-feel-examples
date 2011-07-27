@@ -21,7 +21,7 @@
 #elif defined (JUCER_MSVC6_734A9119)
  #include "../../../Documents/Dropbox/AudioProcessing/juce_1_52/amalgamation/juce_amalgamated4.cpp"
 #elif defined (JUCER_XCODE_IPHONE_5BC26AE3)
- #include "/Users/nick/programming/SDKs/juce/amalgamation/juce_amalgamated4.cpp"
+ #include "..//Users/nick/programming/SDKs/juce/amalgamation/juce_amalgamated4.cpp"
 #elif defined (JUCER_XCODE_MAC_F6D2F4CF)
- #include "/Users/nick/programming/SDKs/juce/amalgamation/juce_amalgamated4.cpp"
+ #include "..//Users/nick/programming/SDKs/juce/amalgamation/juce_amalgamated4.cpp"
 #endif

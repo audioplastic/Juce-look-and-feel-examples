@@ -44,6 +44,25 @@ public:
     /** Destructor. */
     virtual ~LookAndFeelCustom();
 
+	virtual void drawRotarySlider	(	Graphics & 	g,
+									 int 	x,
+									 int 	y,
+									 int 	width,
+									 int 	height,
+									 float 	sliderPosProportional,
+									 float 	rotaryStartAngle,
+									 float 	rotaryEndAngle,
+									 Slider & 	slider );
+
+
+
+
+	//==============================================================================
+	// All of the stuff from here down has just been copied from the oldLookAndFeel 
+	// class and hacked a bit to toy with it.
+	//==============================================================================
+
+
     //==============================================================================
     /** Draws the lozenge-shaped background for a standard button. */
     virtual void drawButtonBackground (Graphics& g,

@@ -85,12 +85,6 @@ LINK32=link.exe
 # Begin Group "lookandfeel"
 # PROP Default_Filter "cpp;c;cc;cxx;rc;def;r;odl;idl;hpj;bat"
 # Begin Source File
-SOURCE="..\..\Source\lookandfeel\jucetice_ImageKnob.cpp"
-# End Source File
-# Begin Source File
-SOURCE="..\..\Source\lookandfeel\jucetice_ImageKnob.h"
-# End Source File
-# Begin Source File
 SOURCE="..\..\Source\lookandfeel\LookAndFeelCustom.cpp"
 # End Source File
 # Begin Source File

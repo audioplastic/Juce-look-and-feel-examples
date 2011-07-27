@@ -71,6 +71,44 @@ LookAndFeelCustom::~LookAndFeelCustom()
 {
 }
 
+void LookAndFeelCustom::drawRotarySlider	(	Graphics & 	g,
+									 int 	x,
+									 int 	y,
+									 int 	width,
+									 int 	height,
+									 float 	sliderPosProportional,
+									 float 	rotaryStartAngle,
+									 float 	rotaryEndAngle,
+									 Slider & 	slider )
+{
+
+
+	 
+
+
+
+	File temp(T("C:\\Users\\nrclark\\programming\\Juce-look-and-feel-examples\\Assets\\knobman\\knobstrip.png"));
+	Image myStrip = ImageFileFormat::loadFrom(temp);
+
+	const double fractRotation = (slider.getValue() - slider.getMinimum())  /   (slider.getMaximum() - slider.getMinimum()); //value between 0 and 1 for current amount of rotation
+	const int nFrames = myStrip.getHeight()/myStrip.getWidth(); // number of frames for vertical film strip
+	const int frameIdx = (int)ceil(fractRotation * ((double)nFrames-1.0) ); // current index from 0 --> nFrames-1
+
+	const float radius = jmin (width / 2, height / 2) ;
+    const float centreX = x + width * 0.5f;
+    const float centreY = y + height * 0.5f;
+    const float rx = centreX - radius - 2.0f;
+    const float ry = centreY - radius - 2.0f;
+
+	g.drawImage(myStrip,	rx, ry,							2*(int)radius, 2*(int)radius,   //Dest 
+							0, frameIdx*myStrip.getWidth(), myStrip.getWidth(),		myStrip.getWidth()); //Source
+
+}
+									 
+
+//==============================================================================
+// All of the stuff from here down has just been copied from the oldLookAndFeel 
+// class and hacked a bit to toy with it.
 //==============================================================================
 void LookAndFeelCustom::drawButtonBackground (Graphics& g,
                                                  Button& button,
@@ -435,7 +473,7 @@ void LookAndFeelCustom::drawLinearSlider (Graphics& g,
 
         if (slider.isHorizontal())
         {
-            g.fillRect (x, y + roundToInt (h * 0.6f),
+            g.fillRect (x, y + roundToInt (h * 0.8f),
                         w, roundToInt (h * 0.2f));
         }
         else

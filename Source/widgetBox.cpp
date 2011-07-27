@@ -3,7 +3,7 @@
 
   This is an automatically generated file created by the Jucer!
 
-  Creation date:  6 Jun 2011 8:32:58pm
+  Creation date:  27 Jul 2011 2:09:45pm
 
   Be careful when adding custom code to these files, as only the code within
   the "//[xyz]" and "//[/xyz]" sections will be retained when the file is loaded
@@ -37,36 +37,36 @@ widgetBox::widgetBox ()
       toggleButton (0),
       textButton (0)
 {
-    addAndMakeVisible (groupComponent = new GroupComponent (T("new group"),
-                                                            T("group")));
+    addAndMakeVisible (groupComponent = new GroupComponent (L"new group",
+                                                            L"group"));
 
-    addAndMakeVisible (comboBox = new ComboBox (T("new combo box")));
+    addAndMakeVisible (comboBox = new ComboBox (L"new combo box"));
     comboBox->setEditableText (false);
     comboBox->setJustificationType (Justification::centredLeft);
     comboBox->setTextWhenNothingSelected (String::empty);
-    comboBox->setTextWhenNoChoicesAvailable (T("(no choices)"));
-    comboBox->addItem (T("Default"), 1);
-    comboBox->addItem (T("Old"), 2);
-    comboBox->addItem (T("Custom"), 3);
+    comboBox->setTextWhenNoChoicesAvailable (L"(no choices)");
+    comboBox->addItem (L"Default", 1);
+    comboBox->addItem (L"Old", 2);
+    comboBox->addItem (L"Custom", 3);
     comboBox->addListener (this);
 
-    addAndMakeVisible (horizontalSlider = new Slider (T("new slider")));
+    addAndMakeVisible (horizontalSlider = new Slider (L"new slider"));
     horizontalSlider->setRange (0, 10, 0);
     horizontalSlider->setSliderStyle (Slider::LinearHorizontal);
     horizontalSlider->setTextBoxStyle (Slider::TextBoxLeft, false, 80, 20);
     horizontalSlider->addListener (this);
 
-    addAndMakeVisible (rotarySlider = new Slider (T("new slider")));
+    addAndMakeVisible (rotarySlider = new Slider (L"new slider"));
     rotarySlider->setRange (0, 10, 0);
     rotarySlider->setSliderStyle (Slider::Rotary);
     rotarySlider->setTextBoxStyle (Slider::TextBoxLeft, false, 80, 20);
     rotarySlider->addListener (this);
 
-    addAndMakeVisible (toggleButton = new ToggleButton (T("new toggle button")));
-    toggleButton->addButtonListener (this);
+    addAndMakeVisible (toggleButton = new ToggleButton (L"new toggle button"));
+    toggleButton->addListener (this);
 
-    addAndMakeVisible (textButton = new TextButton (T("new button")));
-    textButton->addButtonListener (this);
+    addAndMakeVisible (textButton = new TextButton (L"new button"));
+    textButton->addListener (this);
 
 
     //[UserPreSize]
@@ -74,8 +74,9 @@ widgetBox::widgetBox ()
 
     setSize (600, 400);
 
-    //[Constructor] You can add your own custom stuff here..
 
+    //[Constructor] You can add your own custom stuff here..
+	comboBox->setSelectedItemIndex(2);
     //[/Constructor]
 }
 
@@ -90,6 +91,7 @@ widgetBox::~widgetBox()
     deleteAndZero (rotarySlider);
     deleteAndZero (toggleButton);
     deleteAndZero (textButton);
+
 
     //[Destructor]. You can add your own custom destruction code here..
     //[/Destructor]
@@ -109,12 +111,12 @@ void widgetBox::paint (Graphics& g)
 
 void widgetBox::resized()
 {
-    groupComponent->setBounds (proportionOfWidth (0.0270f), proportionOfHeight (0.1601f), proportionOfWidth (0.9469f), proportionOfHeight (0.8003f));
-    comboBox->setBounds (proportionOfWidth (0.6934f), proportionOfHeight (0.0794f), proportionOfWidth (0.2500f), proportionOfHeight (0.0602f));
-    horizontalSlider->setBounds (proportionOfWidth (0.1996f), proportionOfHeight (0.3803f), proportionOfWidth (0.2500f), proportionOfHeight (0.0602f));
-    rotarySlider->setBounds (proportionOfWidth (0.1996f), proportionOfHeight (0.6402f), proportionOfWidth (0.2500f), proportionOfHeight (0.1396f));
-    toggleButton->setBounds (proportionOfWidth (0.5863f), proportionOfHeight (0.3803f), proportionOfWidth (0.2500f), proportionOfHeight (0.0602f));
-    textButton->setBounds (proportionOfWidth (0.5863f), proportionOfHeight (0.6799f), proportionOfWidth (0.2266f), proportionOfHeight (0.0602f));
+    groupComponent->setBounds (proportionOfWidth (0.0267f), proportionOfHeight (0.1600f), proportionOfWidth (0.9467f), proportionOfHeight (0.8000f));
+    comboBox->setBounds (proportionOfWidth (0.6933f), proportionOfHeight (0.0798f), proportionOfWidth (0.2500f), proportionOfHeight (0.0595f));
+    horizontalSlider->setBounds (proportionOfWidth (0.2000f), proportionOfHeight (0.3600f), proportionOfWidth (0.2667f), proportionOfHeight (0.1000f));
+    rotarySlider->setBounds (proportionOfWidth (0.2000f), proportionOfHeight (0.6400f), proportionOfWidth (0.2533f), proportionOfHeight (0.1400f));
+    toggleButton->setBounds (proportionOfWidth (0.5860f), proportionOfHeight (0.3803f), proportionOfWidth (0.2500f), proportionOfHeight (0.0595f));
+    textButton->setBounds (proportionOfWidth (0.5860f), proportionOfHeight (0.6793f), proportionOfWidth (0.2270f), proportionOfHeight (0.0595f));
     //[UserResized] Add your own custom resize handling here..
     //[/UserResized]
 }
@@ -207,29 +209,29 @@ BEGIN_JUCER_METADATA
 <JUCER_COMPONENT documentType="Component" className="widgetBox" componentName=""
                  parentClasses="public Component" constructorParams="" variableInitialisers=""
                  snapPixels="8" snapActive="1" snapShown="1" overlayOpacity="0.330000013"
-                 fixedSize="0" initialWidth="600" initialHeight="400">
+                 fixedSize="1" initialWidth="600" initialHeight="400">
   <BACKGROUND backgroundColour="ffffffff"/>
   <GROUPCOMPONENT name="new group" id="a93cd27e329518c7" memberName="groupComponent"
-                  virtualName="" explicitFocusOrder="0" pos="2.66% 15.965% 94.681% 79.971%"
+                  virtualName="" explicitFocusOrder="0" pos="2.667% 16% 94.667% 80%"
                   title="group"/>
   <COMBOBOX name="new combo box" id="e8102fc3b4c29c5f" memberName="comboBox"
-            virtualName="" explicitFocusOrder="0" pos="69.326% 7.983% 25% 5.951%"
+            virtualName="" explicitFocusOrder="0" pos="69.333% 8% 25% 6%"
             editable="0" layout="33" items="Default&#10;Old&#10;Custom" textWhenNonSelected=""
             textWhenNoItems="(no choices)"/>
   <SLIDER name="new slider" id="b34302c790286fcc" memberName="horizontalSlider"
-          virtualName="" explicitFocusOrder="0" pos="19.947% 38.026% 25% 5.951%"
+          virtualName="" explicitFocusOrder="0" pos="20% 36% 26.667% 10%"
           min="0" max="10" int="0" style="LinearHorizontal" textBoxPos="TextBoxLeft"
           textBoxEditable="1" textBoxWidth="80" textBoxHeight="20" skewFactor="1"/>
   <SLIDER name="new slider" id="3e6197cc63231f93" memberName="rotarySlider"
-          virtualName="" explicitFocusOrder="0" pos="19.947% 64.006% 25% 13.933%"
+          virtualName="" explicitFocusOrder="0" pos="20% 64% 25.333% 14%"
           min="0" max="10" int="0" style="Rotary" textBoxPos="TextBoxLeft"
           textBoxEditable="1" textBoxWidth="80" textBoxHeight="20" skewFactor="1"/>
   <TOGGLEBUTTON name="new toggle button" id="7a2e4a8d404c98b3" memberName="toggleButton"
-                virtualName="" explicitFocusOrder="0" pos="58.599% 38.026% 25% 5.951%"
+                virtualName="" explicitFocusOrder="0" pos="58.667% 38% 25% 6%"
                 buttonText="new toggle button" connectedEdges="0" needsCallback="1"
                 radioGroupId="0" state="0"/>
   <TEXTBUTTON name="new button" id="3e037cf6ef7cb1a" memberName="textButton"
-              virtualName="" explicitFocusOrder="0" pos="58.599% 67.925% 22.695% 5.951%"
+              virtualName="" explicitFocusOrder="0" pos="58.667% 68% 22.667% 6%"
               buttonText="new button" connectedEdges="0" needsCallback="1"
               radioGroupId="0"/>
 </JUCER_COMPONENT>

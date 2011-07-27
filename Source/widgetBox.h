@@ -3,7 +3,7 @@
 
   This is an automatically generated file created by the Jucer!
 
-  Creation date:  6 Jun 2011 8:32:58pm
+  Creation date:  27 Jul 2011 2:09:45pm
 
   Be careful when adding custom code to these files, as only the code within
   the "//[xyz]" and "//[/xyz]" sections will be retained when the file is loaded
@@ -19,8 +19,8 @@
   ==============================================================================
 */
 
-#ifndef __JUCER_HEADER_WIDGETBOX_WIDGETBOX_2E7B2BAA__
-#define __JUCER_HEADER_WIDGETBOX_WIDGETBOX_2E7B2BAA__
+#ifndef __JUCER_HEADER_WIDGETBOX_WIDGETBOX_9219741B__
+#define __JUCER_HEADER_WIDGETBOX_WIDGETBOX_9219741B__
 
 //[Headers]     -- You can add your own extra header files here --
 #include "../JuceLibraryCode/JuceHeader.h"
@@ -58,6 +58,7 @@ public:
     void buttonClicked (Button* buttonThatWasClicked);
 
 
+
     //==============================================================================
     juce_UseDebuggingNewOperator
 
@@ -75,6 +76,7 @@ private:
     ToggleButton* toggleButton;
     TextButton* textButton;
 
+
     //==============================================================================
     // (prevent copy constructor and operator= being generated..)
     widgetBox (const widgetBox&);
@@ -82,4 +84,4 @@ private:
 };
 
 
-#endif   // __JUCER_HEADER_WIDGETBOX_WIDGETBOX_2E7B2BAA__
+#endif   // __JUCER_HEADER_WIDGETBOX_WIDGETBOX_9219741B__

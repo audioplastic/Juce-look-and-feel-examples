@@ -122,7 +122,6 @@
     </Bscmake>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Source\lookandfeel\jucetice_ImageKnob.cpp"/>
     <ClCompile Include="..\..\Source\lookandfeel\LookAndFeelCustom.cpp"/>
     <ClCompile Include="..\..\Source\widgetBox.cpp"/>
     <ClCompile Include="..\..\Source\MainWindow.cpp"/>
@@ -133,7 +132,6 @@
     <ClCompile Include="..\..\JuceLibraryCode\JuceLibraryCode4.cpp"/>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Source\lookandfeel\jucetice_ImageKnob.h"/>
     <ClInclude Include="..\..\Source\lookandfeel\LookAndFeelCustom.h"/>
     <ClInclude Include="..\..\Source\widgetBox.h"/>
     <ClInclude Include="..\..\Source\MainWindow.h"/>
