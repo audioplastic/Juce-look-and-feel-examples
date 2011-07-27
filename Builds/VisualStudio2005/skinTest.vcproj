@@ -128,6 +128,18 @@
   <References/>
   <Files>
     <Filter Name="skinTest">
+      <Filter Name="knobman">
+        <File RelativePath="..\..\Assets\knobman\knobstrip.png">
+          <FileConfiguration Name="Debug|Win32"
+                             ExcludedFromBuild="true">
+            <Tool Name="VCCLCompilerTool"/>
+          </FileConfiguration>
+          <FileConfiguration Name="Release|Win32"
+                             ExcludedFromBuild="true">
+            <Tool Name="VCCLCompilerTool"/>
+          </FileConfiguration>
+        </File>
+      </Filter>
       <Filter Name="Source">
         <Filter Name="lookandfeel">
           <File RelativePath="..\..\Source\lookandfeel\LookAndFeelCustom.cpp"/>
@@ -143,6 +155,8 @@
     <Filter Name="Juce Library Code">
       <File RelativePath="..\..\JuceLibraryCode\AppConfig.h"/>
       <File RelativePath="..\..\JuceLibraryCode\JuceHeader.h"/>
+      <File RelativePath="..\..\JuceLibraryCode\BinaryData.cpp"/>
+      <File RelativePath="..\..\JuceLibraryCode\BinaryData.h"/>
       <File RelativePath="..\..\JuceLibraryCode\JuceLibraryCode1.cpp"/>
       <File RelativePath="..\..\JuceLibraryCode\JuceLibraryCode2.cpp"/>
       <File RelativePath="..\..\JuceLibraryCode\JuceLibraryCode3.cpp"/>

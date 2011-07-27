@@ -80,6 +80,13 @@ LINK32=link.exe
 # Name "skinTest - Win32 Release"
 # Begin Group "skinTest"
 # PROP Default_Filter "cpp;c;cc;cxx;rc;def;r;odl;idl;hpj;bat"
+# Begin Group "knobman"
+# PROP Default_Filter "cpp;c;cc;cxx;rc;def;r;odl;idl;hpj;bat"
+# Begin Source File
+SOURCE="..\..\Assets\knobman\knobstrip.png"
+# PROP Exclude_From_Build 1
+# End Source File
+# End Group
 # Begin Group "Source"
 # PROP Default_Filter "cpp;c;cc;cxx;rc;def;r;odl;idl;hpj;bat"
 # Begin Group "lookandfeel"
@@ -114,6 +121,12 @@ SOURCE="..\..\JuceLibraryCode\AppConfig.h"
 # End Source File
 # Begin Source File
 SOURCE="..\..\JuceLibraryCode\JuceHeader.h"
+# End Source File
+# Begin Source File
+SOURCE="..\..\JuceLibraryCode\BinaryData.cpp"
+# End Source File
+# Begin Source File
+SOURCE="..\..\JuceLibraryCode\BinaryData.h"
 # End Source File
 # Begin Source File
 SOURCE="..\..\JuceLibraryCode\JuceLibraryCode1.cpp"

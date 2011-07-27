@@ -30,6 +30,9 @@
                    osxSDK="default" osxCompatibility="default" osxArchitecture="32BitUniversal"/>
   </CONFIGURATIONS>
   <MAINGROUP id="klXCyt" name="skinTest">
+    <GROUP id="BWjhJN" name="knobman">
+      <FILE id="jlVnqJ" name="knobstrip.png" compile="0" resource="1" file="Assets\knobman\knobstrip.png"/>
+    </GROUP>
     <GROUP id="LE9gMx" name="Source">
       <GROUP id="TpBIil" name="lookandfeel">
         <FILE id="WcXWPv" name="LookAndFeelCustom.cpp" compile="1" resource="0"

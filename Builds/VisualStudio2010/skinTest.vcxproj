@@ -126,6 +126,7 @@
     <ClCompile Include="..\..\Source\widgetBox.cpp"/>
     <ClCompile Include="..\..\Source\MainWindow.cpp"/>
     <ClCompile Include="..\..\Source\Main.cpp"/>
+    <ClCompile Include="..\..\JuceLibraryCode\BinaryData.cpp"/>
     <ClCompile Include="..\..\JuceLibraryCode\JuceLibraryCode1.cpp"/>
     <ClCompile Include="..\..\JuceLibraryCode\JuceLibraryCode2.cpp"/>
     <ClCompile Include="..\..\JuceLibraryCode\JuceLibraryCode3.cpp"/>
@@ -137,6 +138,7 @@
     <ClInclude Include="..\..\Source\MainWindow.h"/>
     <ClInclude Include="..\..\JuceLibraryCode\AppConfig.h"/>
     <ClInclude Include="..\..\JuceLibraryCode\JuceHeader.h"/>
+    <ClInclude Include="..\..\JuceLibraryCode\BinaryData.h"/>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
   <ImportGroup Label="ExtensionTargets"/>

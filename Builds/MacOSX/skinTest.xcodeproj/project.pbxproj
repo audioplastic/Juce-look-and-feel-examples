@@ -21,6 +21,7 @@
 		63E6E8FE112E9E484B91720B = { isa = PBXBuildFile; fileRef = D102E0B2D4F0DF084D86A47C; };
 		E8EFFC82AB6A3598776C4099 = { isa = PBXBuildFile; fileRef = 22406C6743F827D2032D52EB; };
 		944D809A78CF3828D1D86BAA = { isa = PBXBuildFile; fileRef = C5239DCF3A82E03BA23248FF; };
+		FB5EA466316FAE670B862BA7 = { isa = PBXBuildFile; fileRef = 61BB822B043B533286FB171C; };
 		9DCDE77789BFEEFFF8EEF42D = { isa = PBXBuildFile; fileRef = 25D10F76FF1B497E00F9DC02; };
 		A954F718658AA50722C33828 = { isa = PBXBuildFile; fileRef = 7EF8D8720C06CC91E4DC6052; };
 		A5EA07A931457B0F5DA87C23 = { isa = PBXBuildFile; fileRef = B71EA17D19F14FC4B8C0E391; };
@@ -38,6 +39,7 @@
 		6B8F7CD66288DFE3619787F1 = { isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTime.framework; path = System/Library/Frameworks/QuickTime.framework; sourceTree = SDKROOT; };
 		A375C29A624E3CF66B276688 = { isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = skinTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8569219CA37676F63BC51916 = { isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Info.plist; sourceTree = SOURCE_ROOT; };
+		6E2FCE70E571154C7E00843B = { isa = PBXFileReference; lastKnownFileType = image.png; name = knobstrip.png; path = ../../Assets/knobman/knobstrip.png; sourceTree = SOURCE_ROOT; };
 		CF254A7294A0290965466A7C = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = LookAndFeelCustom.cpp; path = ../../Source/lookandfeel/LookAndFeelCustom.cpp; sourceTree = SOURCE_ROOT; };
 		749851BF21B64D7F4D245273 = { isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LookAndFeelCustom.h; path = ../../Source/lookandfeel/LookAndFeelCustom.h; sourceTree = SOURCE_ROOT; };
 		9E4A73DE43BB2C41D39730EB = { isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = widgetBox.h; path = ../../Source/widgetBox.h; sourceTree = SOURCE_ROOT; };
@@ -47,10 +49,14 @@
 		C5239DCF3A82E03BA23248FF = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Main.cpp; path = ../../Source/Main.cpp; sourceTree = SOURCE_ROOT; };
 		59F3E6269244520F4C1D1956 = { isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppConfig.h; path = ../../JuceLibraryCode/AppConfig.h; sourceTree = SOURCE_ROOT; };
 		107FBDD3940F766FA0298DA6 = { isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JuceHeader.h; path = ../../JuceLibraryCode/JuceHeader.h; sourceTree = SOURCE_ROOT; };
+		61BB822B043B533286FB171C = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = BinaryData.cpp; path = ../../JuceLibraryCode/BinaryData.cpp; sourceTree = SOURCE_ROOT; };
+		474AFFB238109B27FD0B7B17 = { isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BinaryData.h; path = ../../JuceLibraryCode/BinaryData.h; sourceTree = SOURCE_ROOT; };
 		25D10F76FF1B497E00F9DC02 = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = JuceLibraryCode1.mm; path = ../../JuceLibraryCode/JuceLibraryCode1.mm; sourceTree = SOURCE_ROOT; };
 		7EF8D8720C06CC91E4DC6052 = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = JuceLibraryCode2.mm; path = ../../JuceLibraryCode/JuceLibraryCode2.mm; sourceTree = SOURCE_ROOT; };
 		B71EA17D19F14FC4B8C0E391 = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = JuceLibraryCode3.mm; path = ../../JuceLibraryCode/JuceLibraryCode3.mm; sourceTree = SOURCE_ROOT; };
 		0135797926DDB2E89CA367D1 = { isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = JuceLibraryCode4.mm; path = ../../JuceLibraryCode/JuceLibraryCode4.mm; sourceTree = SOURCE_ROOT; };
+		CB6F954F2953A0BA3AF756C4 = { isa = PBXGroup; children = (
+				6E2FCE70E571154C7E00843B ); name = knobman; sourceTree = "<group>"; };
 		23AA0B3E13442BE8CD1DC766 = { isa = PBXGroup; children = (
 				CF254A7294A0290965466A7C,
 				749851BF21B64D7F4D245273 ); name = lookandfeel; sourceTree = "<group>"; };
@@ -64,6 +70,8 @@
 		C7EAAB795A457A4A56918E76 = { isa = PBXGroup; children = (
 				59F3E6269244520F4C1D1956,
 				107FBDD3940F766FA0298DA6,
+				61BB822B043B533286FB171C,
+				474AFFB238109B27FD0B7B17,
 				25D10F76FF1B497E00F9DC02,
 				7EF8D8720C06CC91E4DC6052,
 				B71EA17D19F14FC4B8C0E391,
@@ -85,6 +93,7 @@
 		AA1CAEBEF45BBDB771F88245 = { isa = PBXGroup; children = (
 				A375C29A624E3CF66B276688 ); name = Products; sourceTree = "<group>"; };
 		34E66D697D96A8CF0715CB0A = { isa = PBXGroup; children = (
+				CB6F954F2953A0BA3AF756C4,
 				6D40A729AF7EF7553B4145E0,
 				C7EAAB795A457A4A56918E76,
 				7B581B6DBEB2AF8826A68398,
@@ -164,6 +173,7 @@
 				63E6E8FE112E9E484B91720B,
 				E8EFFC82AB6A3598776C4099,
 				944D809A78CF3828D1D86BAA,
+				FB5EA466316FAE670B862BA7,
 				9DCDE77789BFEEFFF8EEF42D,
 				A954F718658AA50722C33828,
 				A5EA07A931457B0F5DA87C23,

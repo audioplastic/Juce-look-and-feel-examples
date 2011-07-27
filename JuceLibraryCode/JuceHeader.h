@@ -27,6 +27,7 @@
 #elif defined (JUCER_XCODE_MAC_F6D2F4CF)
  #include "..//Users/nick/programming/SDKs/juce/juce_amalgamated.h"
 #endif
+#include "BinaryData.h"
 
 namespace ProjectInfo
 {

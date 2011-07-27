@@ -5,6 +5,9 @@
     <Filter Include="skinTest">
       <UniqueIdentifier>{383434F4-5D8A-7B67-4C34-506E87E0F808}</UniqueIdentifier>
     </Filter>
+    <Filter Include="skinTest\knobman">
+      <UniqueIdentifier>{AC71D93F-2F05-216C-3594-52EFCA9FEABE}</UniqueIdentifier>
+    </Filter>
     <Filter Include="skinTest\Source">
       <UniqueIdentifier>{74B47FAA-011D-1ED8-599F-F78F714AEE61}</UniqueIdentifier>
     </Filter>
@@ -16,6 +19,9 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Assets\knobman\knobstrip.png">
+      <Filter>skinTest\knobman</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\lookandfeel\LookAndFeelCustom.cpp">
       <Filter>skinTest\Source\lookandfeel</Filter>
     </ClCompile>
@@ -27,6 +33,9 @@
     </ClCompile>
     <ClCompile Include="..\..\Source\Main.cpp">
       <Filter>skinTest\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JuceLibraryCode\BinaryData.cpp">
+      <Filter>Juce Library Code</Filter>
     </ClCompile>
     <ClCompile Include="..\..\JuceLibraryCode\JuceLibraryCode1.cpp">
       <Filter>Juce Library Code</Filter>
@@ -55,6 +64,9 @@
       <Filter>Juce Library Code</Filter>
     </ClInclude>
     <ClInclude Include="..\..\JuceLibraryCode\JuceHeader.h">
+      <Filter>Juce Library Code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\JuceLibraryCode\BinaryData.h">
       <Filter>Juce Library Code</Filter>
     </ClInclude>
   </ItemGroup>
