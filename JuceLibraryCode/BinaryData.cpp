@@ -5,29 +5,11 @@
 
 */
 
-#include "BinaryData.h"
-
-
-const char* BinaryData::getNamedResource (const char* resourceNameUTF8, int& numBytes) throw()
+namespace BinaryData
 {
-    int hash = 0;
-    if (resourceNameUTF8 != 0)
-        while (*resourceNameUTF8 != 0)
-            hash = 31 * hash + *resourceNameUTF8++;
-
-    switch (hash)
-    {
-        case 0x07302ecc:  numBytes = BinaryData::knobstrip_pngSize; return BinaryData::knobstrip_png;
-        default: break;
-    }
-
-    numBytes = 0;
-    return 0;
-}
-
 
 //================== knobstrip.png ==================
-static const unsigned char temp_8578147[] =
+static const unsigned char temp_ff09acb5[] =
 { 137,80,78,71,13,10,26,10,0,0,0,13,73,72,68,82,0,0,0,60,0,0,11,184,8,6,0,0,0,189,218,219,70,0,0,0,1,115,82,71,66,0,174,206,28,233,0,0,0,4,103,65,77,65,0,0,177,143,11,252,97,5,0,0,0,32,99,72,82,77,0,0,122,38,0,0,128,132,0,0,250,0,0,0,128,232,0,0,117,48,
 0,0,234,96,0,0,58,152,0,0,23,112,156,186,81,60,0,0,255,142,73,68,65,84,120,94,236,221,7,184,221,85,149,254,113,122,17,66,239,24,170,212,80,2,132,222,123,7,169,161,247,94,21,5,69,41,2,98,69,68,197,142,221,209,65,84,20,105,34,132,20,66,34,138,56,214,41,
 204,56,227,232,52,203,252,71,69,177,238,255,251,57,220,117,231,112,185,33,55,36,55,185,97,78,158,231,247,156,219,115,214,222,107,175,189,246,222,239,119,175,5,91,107,11,252,159,250,199,224,255,75,207,92,49,246,254,251,239,95,227,174,187,238,218,237,243,
@@ -2328,4 +2310,26 @@ static const unsigned char temp_8578147[] =
 121,182,124,103,217,67,42,129,219,56,17,237,162,101,247,32,74,251,20,157,200,79,145,41,125,86,197,30,86,171,214,190,232,16,80,197,30,238,15,251,244,141,59,173,111,251,67,139,160,203,42,223,67,94,196,97,225,123,248,255,1,153,155,31,95,64,87,180,33,0,0,
 0,0,73,69,78,68,174,66,96,130,0,0 };
 
-const char* BinaryData::knobstrip_png = (const char*) temp_8578147;
+const char* knobstrip_png = (const char*) temp_ff09acb5;
+
+
+const char* getNamedResource (const char*, int&) throw();
+const char* getNamedResource (const char* resourceNameUTF8, int& numBytes) throw()
+{
+    int hash = 0;
+    if (resourceNameUTF8 != 0)
+        while (*resourceNameUTF8 != 0)
+            hash = 31 * hash + *resourceNameUTF8++;
+
+    switch (hash)
+    {
+        case 0x07302ecc:
+        case 0x1b2cda52:  numBytes = 160459; return knobstrip_png;
+        default: break;
+    }
+
+    numBytes = 0;
+    return 0;
+}
+
+}

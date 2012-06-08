@@ -133,15 +133,15 @@ void widgetBox::comboBoxChanged (ComboBox* comboBoxThatHasChanged)
 		switch(  comboBox->getSelectedItemIndex()  )
 		{
 		case 0:
-			DBG(T("Default selected"))
+			DBG(("Default selected"))
 			LookAndFeel::setDefaultLookAndFeel (nullptr);
 			break;
 		case 1:
-			DBG(T("Old selected"))
+			DBG(("Old selected"))
 			LookAndFeel::setDefaultLookAndFeel (&oldLookAndFeel);
 			break;
 		case 2:
-			DBG(T("Custom selected"))
+			DBG(("Custom selected"))
 			LookAndFeel::setDefaultLookAndFeel (&customLookAndFeel);
 			break;
 		}

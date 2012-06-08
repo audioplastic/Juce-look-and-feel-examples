@@ -11,24 +11,53 @@
               jucerVersion="3.0.0">
   <EXPORTFORMATS>
     <XCODE_MAC targetFolder="Builds/MacOSX" vstFolder="~/SDKs/vstsdk2.4" rtasFolder="~/SDKs/PT_80_SDK"
-               objCExtraSuffix="yecjFZ" juceFolder="/Users/nick/programming/SDKs/juce"/>
+               objCExtraSuffix="yecjFZ" juceFolder="/Users/nick/programming/SDKs/juce">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="skinTest"
+                       osxSDK="default" osxCompatibility="default" osxArchitecture="32BitUniversal"/>
+        <CONFIGURATION name="Release" isDebug="0" optimisation="2" targetName="skinTest"
+                       osxSDK="default" osxCompatibility="default" osxArchitecture="32BitUniversal"/>
+      </CONFIGURATIONS>
+    </XCODE_MAC>
     <XCODE_IPHONE targetFolder="Builds/iOS" vstFolder="~/SDKs/vstsdk2.4" rtasFolder="~/SDKs/PT_80_SDK"
-                  objCExtraSuffix="nifqI" juceFolder="/Users/nick/programming/SDKs/juce"/>
-    <MSVC6 targetFolder="Builds/MSVC6" vstFolder="c:\SDKs\vstsdk2.4" rtasFolder="c:\SDKs\PT_80_SDK"
-           libraryType="1" juceFolder="..\..\Documents\Dropbox\AudioProcessing\juce_1_52"/>
+                  objCExtraSuffix="nifqI" juceFolder="/Users/nick/programming/SDKs/juce">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="skinTest"
+                       osxSDK="default" osxCompatibility="default" osxArchitecture="32BitUniversal"
+                       iosCompatibility="default"/>
+        <CONFIGURATION name="Release" isDebug="0" optimisation="2" targetName="skinTest"
+                       osxSDK="default" osxCompatibility="default" osxArchitecture="32BitUniversal"
+                       iosCompatibility="default"/>
+      </CONFIGURATIONS>
+    </XCODE_IPHONE>
     <VS2005 targetFolder="Builds/VisualStudio2005" vstFolder="c:\SDKs\vstsdk2.4"
-            rtasFolder="c:\SDKs\PT_80_SDK" libraryType="1" juceFolder="..\..\Documents\Dropbox\AudioProcessing\juce_1_52"/>
+            rtasFolder="c:\SDKs\PT_80_SDK" libraryType="1" juceFolder="..\..\Documents\Dropbox\AudioProcessing\juce_1_52">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="skinTest"
+                       winWarningLevel="4" generateManifest="1"/>
+        <CONFIGURATION name="Release" isDebug="0" optimisation="2" targetName="skinTest"
+                       winWarningLevel="4" generateManifest="1"/>
+      </CONFIGURATIONS>
+    </VS2005>
     <VS2008 targetFolder="Builds/VisualStudio2008" vstFolder="c:\SDKs\vstsdk2.4"
-            rtasFolder="c:\SDKs\PT_80_SDK" libraryType="1" juceFolder="c:\SDKs\juce"/>
+            rtasFolder="c:\SDKs\PT_80_SDK" libraryType="1" juceFolder="c:\SDKs\juce">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="skinTest"
+                       winWarningLevel="4" generateManifest="1"/>
+        <CONFIGURATION name="Release" isDebug="0" optimisation="2" targetName="skinTest"
+                       winWarningLevel="4" generateManifest="1"/>
+      </CONFIGURATIONS>
+    </VS2008>
     <VS2010 targetFolder="Builds/VisualStudio2010" vstFolder="c:\SDKs\vstsdk2.4"
-            rtasFolder="c:\SDKs\PT_80_SDK" libraryType="1" juceFolder="..\..\Documents\Dropbox\AudioProcessing\juce_1_52"/>
+            rtasFolder="c:\SDKs\PT_80_SDK" libraryType="1" juceFolder="..\..\Documents\Dropbox\AudioProcessing\juce_1_52">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="skinTest"
+                       winWarningLevel="4" generateManifest="1" winArchitecture="32-bit"/>
+        <CONFIGURATION name="Release" isDebug="0" optimisation="2" targetName="skinTest"
+                       winWarningLevel="4" generateManifest="1" winArchitecture="32-bit"/>
+      </CONFIGURATIONS>
+    </VS2010>
   </EXPORTFORMATS>
-  <CONFIGURATIONS>
-    <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="skinTest"
-                   osxSDK="default" osxCompatibility="default" osxArchitecture="32BitUniversal"/>
-    <CONFIGURATION name="Release" isDebug="0" optimisation="2" targetName="skinTest"
-                   osxSDK="default" osxCompatibility="default" osxArchitecture="32BitUniversal"/>
-  </CONFIGURATIONS>
   <MAINGROUP id="klXCyt" name="skinTest">
     <GROUP id="BWjhJN" name="knobman">
       <FILE id="jlVnqJ" name="knobstrip.png" compile="0" resource="1" file="Assets\knobman\knobstrip.png"/>
@@ -47,14 +76,21 @@
       <FILE id="JyCIUu" name="Main.cpp" compile="1" resource="0" file="Source\Main.cpp"/>
     </GROUP>
   </MAINGROUP>
-  <JUCEOPTIONS JUCE_FORCE_DEBUG="default" JUCE_LOG_ASSERTIONS="default" JUCE_ASIO="default"
-               JUCE_WASAPI="default" JUCE_DIRECTSOUND="default" JUCE_ALSA="default"
-               JUCE_QUICKTIME="default" JUCE_OPENGL="default" JUCE_DIRECT2D="default"
-               JUCE_USE_FLAC="default" JUCE_USE_OGGVORBIS="default" JUCE_USE_CDBURNER="default"
-               JUCE_USE_CDREADER="default" JUCE_USE_CAMERA="default" JUCE_ENABLE_REPAINT_DEBUGGING="default"
-               JUCE_USE_XINERAMA="default" JUCE_USE_XSHM="default" JUCE_USE_XRENDER="default"
-               JUCE_USE_XCURSOR="default" JUCE_PLUGINHOST_VST="default" JUCE_PLUGINHOST_AU="default"
-               JUCE_ONLY_BUILD_CORE_LIBRARY="default" JUCE_WEB_BROWSER="default"
-               JUCE_SUPPORT_CARBON="default" JUCE_CHECK_MEMORY_LEAKS="default"
-               JUCE_CATCH_UNHANDLED_EXCEPTIONS="default"/>
+  <JUCEOPTIONS/>
+  <MODULES>
+    <MODULE id="juce_core" showAllCode="1"/>
+    <MODULE id="juce_events" showAllCode="1"/>
+    <MODULE id="juce_graphics" showAllCode="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1"/>
+    <MODULE id="juce_gui_audio" showAllCode="1"/>
+    <MODULE id="juce_cryptography" showAllCode="1"/>
+    <MODULE id="juce_video" showAllCode="1"/>
+    <MODULE id="juce_opengl" showAllCode="1"/>
+    <MODULE id="juce_audio_basics" showAllCode="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1"/>
+  </MODULES>
 </JUCERPROJECT>
