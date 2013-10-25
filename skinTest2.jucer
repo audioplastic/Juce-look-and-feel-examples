@@ -6,17 +6,17 @@
   <MAINGROUP id="mIy8FW" name="skinTest2">
     <FILE id="Nwardd" name="knobstrip.png" compile="0" resource="1" file="Assets/knobman/knobstrip.png"/>
     <GROUP id="{C50EA4AE-094B-F99C-0659-DB008CD94A44}" name="Source">
+      <FILE id="fgx0rX" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+      <FILE id="luaPLe" name="MainWindow.h" compile="0" resource="0" file="Source/MainWindow.h"/>
+      <FILE id="fZ3eJg" name="MainWindow.cpp" compile="1" resource="0" file="Source/MainWindow.cpp"/>
+      <FILE id="lw48uh" name="widgetBox.h" compile="0" resource="0" file="Source/widgetBox.h"/>
+      <FILE id="gFmnto" name="widgetBox.cpp" compile="1" resource="0" file="Source/widgetBox.cpp"/>
       <GROUP id="{E3AFE07C-A265-210D-C28C-B4BAF294F9E0}" name="lookandfeel">
         <FILE id="Q5hmkw" name="LookAndFeelCustom.cpp" compile="1" resource="0"
               file="Source/lookandfeel/LookAndFeelCustom.cpp"/>
         <FILE id="nOnCcw" name="LookAndFeelCustom.h" compile="0" resource="0"
               file="Source/lookandfeel/LookAndFeelCustom.h"/>
       </GROUP>
-      <FILE id="fgx0rX" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
-      <FILE id="fZ3eJg" name="MainWindow.cpp" compile="1" resource="0" file="Source/MainWindow.cpp"/>
-      <FILE id="luaPLe" name="MainWindow.h" compile="0" resource="0" file="Source/MainWindow.h"/>
-      <FILE id="gFmnto" name="widgetBox.cpp" compile="1" resource="0" file="Source/widgetBox.cpp"/>
-      <FILE id="lw48uh" name="widgetBox.h" compile="0" resource="0" file="Source/widgetBox.h"/>
     </GROUP>
   </MAINGROUP>
   <EXPORTFORMATS>
