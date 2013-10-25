@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="aieJzh" name="skinTest2" projectType="guiapp" version="1.0.0"
+              bundleIdentifier="com.yourcompany.skinTest2" includeBinaryInAppConfig="1"
+              jucerVersion="3.1.0">
+  <MAINGROUP id="mIy8FW" name="skinTest2">
+    <FILE id="Nwardd" name="knobstrip.png" compile="0" resource="1" file="Assets/knobman/knobstrip.png"/>
+    <GROUP id="{C50EA4AE-094B-F99C-0659-DB008CD94A44}" name="Source">
+      <GROUP id="{E3AFE07C-A265-210D-C28C-B4BAF294F9E0}" name="lookandfeel">
+        <FILE id="Q5hmkw" name="LookAndFeelCustom.cpp" compile="1" resource="0"
+              file="Source/lookandfeel/LookAndFeelCustom.cpp"/>
+        <FILE id="nOnCcw" name="LookAndFeelCustom.h" compile="0" resource="0"
+              file="Source/lookandfeel/LookAndFeelCustom.h"/>
+      </GROUP>
+      <FILE id="fgx0rX" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+      <FILE id="fZ3eJg" name="MainWindow.cpp" compile="1" resource="0" file="Source/MainWindow.cpp"/>
+      <FILE id="luaPLe" name="MainWindow.h" compile="0" resource="0" file="Source/MainWindow.h"/>
+      <FILE id="gFmnto" name="widgetBox.cpp" compile="1" resource="0" file="Source/widgetBox.cpp"/>
+      <FILE id="lw48uh" name="widgetBox.h" compile="0" resource="0" file="Source/widgetBox.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" osxSDK="default" osxCompatibility="default" osxArchitecture="default"
+                       isDebug="1" optimisation="1" targetName="skinTest2"/>
+        <CONFIGURATION name="Release" osxSDK="default" osxCompatibility="default" osxArchitecture="default"
+                       isDebug="0" optimisation="2" targetName="skinTest2"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_events" path="JuceLibraryCode/modules"/>
+        <MODULEPATH id="juce_data_structures" path="JuceLibraryCode/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="JuceLibraryCode/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="JuceLibraryCode/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../../SDKs/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../SDKs/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../SDKs/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats"/>
+        <MODULEPATH id="juce_graphics" path="JuceLibraryCode/modules"/>
+        <MODULEPATH id="juce_core" path="JuceLibraryCode/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULES id="juce_core" showAllCode="1" useLocalCopy="1"/>
+    <MODULES id="juce_data_structures" showAllCode="1" useLocalCopy="1"/>
+    <MODULES id="juce_events" showAllCode="1" useLocalCopy="1"/>
+    <MODULES id="juce_graphics" showAllCode="1" useLocalCopy="1"/>
+    <MODULES id="juce_gui_basics" showAllCode="1" useLocalCopy="1"/>
+    <MODULES id="juce_gui_extra" showAllCode="1" useLocalCopy="1"/>
+  </MODULES>
+  <JUCEOPTIONS/>
+</JUCERPROJECT>

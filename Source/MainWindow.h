@@ -12,6 +12,7 @@
 #define __MAINWINDOW_H_935BBEE2__
 
 #include "../JuceLibraryCode/JuceHeader.h"
+#include "widgetBox.h"
 
 
 //==============================================================================
@@ -33,6 +34,7 @@ public:
     */
 
 private:
+    ScopedPointer<widgetBox> contentComponent;
     //==============================================================================
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (MainAppWindow)
 };

@@ -8,19 +8,28 @@
               pluginSilenceInIsSilenceOut="0" pluginTailLength="0" pluginEditorRequiresKeys="0"
               pluginAUExportPrefix="JuceProjectAU" pluginAUViewClass="JuceProjectAU_V1"
               pluginRTASCategory="" bundleIdentifier="com.yourcompany.skinTest"
-              jucerVersion="3.0.0">
+              jucerVersion="3.1.0" includeBinaryInAppConfig="1">
   <EXPORTFORMATS>
     <XCODE_MAC targetFolder="Builds/MacOSX" vstFolder="~/SDKs/vstsdk2.4" rtasFolder="~/SDKs/PT_80_SDK"
-               objCExtraSuffix="yecjFZ" juceFolder="/Users/nick/programming/SDKs/juce">
+               objCExtraSuffix="yecjFZ">
       <CONFIGURATIONS>
         <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="skinTest"
                        osxSDK="default" osxCompatibility="default" osxArchitecture="32BitUniversal"/>
         <CONFIGURATION name="Release" isDebug="0" optimisation="2" targetName="skinTest"
                        osxSDK="default" osxCompatibility="default" osxArchitecture="32BitUniversal"/>
       </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_gui_audio" path="/Users/nick/programming/SDKs/juce/modules"/>
+        <MODULEPATH id="juce_core" path="JuceLibraryCode/modules"/>
+        <MODULEPATH id="juce_data_structures" path="JuceLibraryCode/modules"/>
+        <MODULEPATH id="juce_events" path="JuceLibraryCode/modules"/>
+        <MODULEPATH id="juce_graphics" path="JuceLibraryCode/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="JuceLibraryCode/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="JuceLibraryCode/modules"/>
+      </MODULEPATHS>
     </XCODE_MAC>
     <XCODE_IPHONE targetFolder="Builds/iOS" vstFolder="~/SDKs/vstsdk2.4" rtasFolder="~/SDKs/PT_80_SDK"
-                  objCExtraSuffix="nifqI" juceFolder="/Users/nick/programming/SDKs/juce">
+                  objCExtraSuffix="nifqI">
       <CONFIGURATIONS>
         <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="skinTest"
                        osxSDK="default" osxCompatibility="default" osxArchitecture="32BitUniversal"
@@ -29,34 +38,16 @@
                        osxSDK="default" osxCompatibility="default" osxArchitecture="32BitUniversal"
                        iosCompatibility="default"/>
       </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_gui_audio" path="/Users/nick/programming/SDKs/juce/modules"/>
+        <MODULEPATH id="juce_core" path="JuceLibraryCode/modules"/>
+        <MODULEPATH id="juce_data_structures" path="JuceLibraryCode/modules"/>
+        <MODULEPATH id="juce_events" path="JuceLibraryCode/modules"/>
+        <MODULEPATH id="juce_graphics" path="JuceLibraryCode/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="JuceLibraryCode/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="JuceLibraryCode/modules"/>
+      </MODULEPATHS>
     </XCODE_IPHONE>
-    <VS2005 targetFolder="Builds/VisualStudio2005" vstFolder="c:\SDKs\vstsdk2.4"
-            rtasFolder="c:\SDKs\PT_80_SDK" libraryType="1" juceFolder="..\..\Documents\Dropbox\AudioProcessing\juce_1_52">
-      <CONFIGURATIONS>
-        <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="skinTest"
-                       winWarningLevel="4" generateManifest="1"/>
-        <CONFIGURATION name="Release" isDebug="0" optimisation="2" targetName="skinTest"
-                       winWarningLevel="4" generateManifest="1"/>
-      </CONFIGURATIONS>
-    </VS2005>
-    <VS2008 targetFolder="Builds/VisualStudio2008" vstFolder="c:\SDKs\vstsdk2.4"
-            rtasFolder="c:\SDKs\PT_80_SDK" libraryType="1" juceFolder="c:\SDKs\juce">
-      <CONFIGURATIONS>
-        <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="skinTest"
-                       winWarningLevel="4" generateManifest="1"/>
-        <CONFIGURATION name="Release" isDebug="0" optimisation="2" targetName="skinTest"
-                       winWarningLevel="4" generateManifest="1"/>
-      </CONFIGURATIONS>
-    </VS2008>
-    <VS2010 targetFolder="Builds/VisualStudio2010" vstFolder="c:\SDKs\vstsdk2.4"
-            rtasFolder="c:\SDKs\PT_80_SDK" libraryType="1" juceFolder="..\..\Documents\Dropbox\AudioProcessing\juce_1_52">
-      <CONFIGURATIONS>
-        <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="skinTest"
-                       winWarningLevel="4" generateManifest="1" winArchitecture="32-bit"/>
-        <CONFIGURATION name="Release" isDebug="0" optimisation="2" targetName="skinTest"
-                       winWarningLevel="4" generateManifest="1" winArchitecture="32-bit"/>
-      </CONFIGURATIONS>
-    </VS2010>
   </EXPORTFORMATS>
   <MAINGROUP id="klXCyt" name="skinTest">
     <GROUP id="BWjhJN" name="knobman">
@@ -78,19 +69,11 @@
   </MAINGROUP>
   <JUCEOPTIONS/>
   <MODULES>
-    <MODULE id="juce_core" showAllCode="1"/>
-    <MODULE id="juce_events" showAllCode="1"/>
-    <MODULE id="juce_graphics" showAllCode="1"/>
-    <MODULE id="juce_data_structures" showAllCode="1"/>
-    <MODULE id="juce_gui_basics" showAllCode="1"/>
-    <MODULE id="juce_gui_extra" showAllCode="1"/>
-    <MODULE id="juce_gui_audio" showAllCode="1"/>
-    <MODULE id="juce_cryptography" showAllCode="1"/>
-    <MODULE id="juce_video" showAllCode="1"/>
-    <MODULE id="juce_opengl" showAllCode="1"/>
-    <MODULE id="juce_audio_basics" showAllCode="1"/>
-    <MODULE id="juce_audio_devices" showAllCode="1"/>
-    <MODULE id="juce_audio_formats" showAllCode="1"/>
-    <MODULE id="juce_audio_processors" showAllCode="1"/>
+    <MODULES id="juce_core" showAllCode="1" useLocalCopy="1"/>
+    <MODULES id="juce_data_structures" showAllCode="1" useLocalCopy="1"/>
+    <MODULES id="juce_events" showAllCode="1" useLocalCopy="1"/>
+    <MODULES id="juce_graphics" showAllCode="1" useLocalCopy="1"/>
+    <MODULES id="juce_gui_basics" showAllCode="1" useLocalCopy="1"/>
+    <MODULES id="juce_gui_extra" showAllCode="1" useLocalCopy="1"/>
   </MODULES>
 </JUCERPROJECT>

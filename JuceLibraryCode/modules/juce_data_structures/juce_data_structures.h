@@ -1,17 +1,43 @@
-// This is an auto-generated file to redirect any included
-// module headers to the correct external folder.
+/*
+  ==============================================================================
 
-#if defined (JUCER_XCODE_MAC_F6D2F4CF)
- #include "/Users/nick/programming/SDKs/juce/modules/juce_data_structures/juce_data_structures.h"
-#elif defined (JUCER_XCODE_IPHONE_5BC26AE3)
- #include "/Users/nick/programming/SDKs/juce/modules/juce_data_structures/juce_data_structures.h"
-#elif defined (JUCER_VS2005_78A5003)
- #include "../../../../../Documents/Dropbox/AudioProcessing/juce_1_52/modules/juce_data_structures/juce_data_structures.h"
-#elif defined (JUCER_VS2008_78A5006)
- #include "c:/SDKs/juce/modules/juce_data_structures/juce_data_structures.h"
-#elif defined (JUCER_VS2010_78A501D)
- #include "../../../../../Documents/Dropbox/AudioProcessing/juce_1_52/modules/juce_data_structures/juce_data_structures.h"
-#else
- #error "This file is designed to be used in an Introjucer-generated project!"
-#endif
+   This file is part of the JUCE library.
+   Copyright (c) 2013 - Raw Material Software Ltd.
 
+   Permission is granted to use this software under the terms of either:
+   a) the GPL v2 (or any later version)
+   b) the Affero GPL v3
+
+   Details of these licenses can be found at: www.gnu.org/licenses
+
+   JUCE is distributed in the hope that it will be useful, but WITHOUT ANY
+   WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
+   A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+   ------------------------------------------------------------------------------
+
+   To release a closed-source product which uses JUCE, commercial licenses are
+   available: visit www.juce.com for more information.
+
+  ==============================================================================
+*/
+
+#ifndef JUCE_DATA_STRUCTURES_H_INCLUDED
+#define JUCE_DATA_STRUCTURES_H_INCLUDED
+
+//=============================================================================
+#include "../juce_events/juce_events.h"
+
+namespace juce
+{
+
+#include "undomanager/juce_UndoableAction.h"
+#include "undomanager/juce_UndoManager.h"
+#include "values/juce_Value.h"
+#include "values/juce_ValueTree.h"
+#include "app_properties/juce_PropertiesFile.h"
+#include "app_properties/juce_ApplicationProperties.h"
+
+}
+
+#endif   // JUCE_DATA_STRUCTURES_H_INCLUDED
