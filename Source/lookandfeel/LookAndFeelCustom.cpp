@@ -32,7 +32,7 @@
 //==============================================================================
 LookAndFeelCustom::LookAndFeelCustom()
 {
-    setColour (TextButton::buttonColourId,          Colour (0xffbbbbff));
+    setColour (TextButton::buttonColourId,          Colours::yellow);
     setColour (ListBox::outlineColourId,            findColour (ComboBox::outlineColourId));
     setColour (ScrollBar::thumbColourId,            Colour (0xffbbbbdd));
     setColour (ScrollBar::backgroundColourId,       Colours::transparentBlack);
@@ -83,8 +83,14 @@ void LookAndFeelCustom::drawRotarySlider	(	Graphics & 	g,
     const float ry = centreY - radius - 1.0f;
 
 	g.drawImage(myStrip,	
-				(int)rx,	(int)ry,						2*(int)radius,			2*(int)radius,   //Dest 
-				0,			frameIdx*myStrip.getWidth(),	myStrip.getWidth(),		myStrip.getWidth()); //Source
+				(int)rx,
+                (int)ry,
+                2*(int)radius,
+                2*(int)radius,   //Dest
+				0,
+                frameIdx*myStrip.getWidth(),
+                myStrip.getWidth(),
+                myStrip.getWidth()); //Source
 
 }
 									 
