@@ -9,7 +9,6 @@
 */
 
 #include "MainWindow.h"
-#include "widgetBox.h"
 
 
 //==============================================================================
@@ -25,8 +24,10 @@ MainAppWindow::MainAppWindow()
 
 	//setTitleBarHeight (20);     
 
-	widgetBox* contentComponent = new widgetBox ();
-	setContentComponent (contentComponent);
+	contentComponent = new widgetBox ();
+    setContentOwned (contentComponent.get(),false);
+    setVisible (true);
+    addToDesktop();
 }
 
 MainAppWindow::~MainAppWindow()

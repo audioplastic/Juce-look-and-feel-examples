@@ -1,20 +1,18 @@
 /*
   ==============================================================================
 
-  This is an automatically generated file created by the Jucer!
-
-  Creation date:  27 Jul 2011 2:09:45pm
+  This is an automatically generated GUI class created by the Introjucer!
 
   Be careful when adding custom code to these files, as only the code within
   the "//[xyz]" and "//[/xyz]" sections will be retained when the file is loaded
   and re-saved.
 
-  Jucer version: 1.12
+  Created with Introjucer version: 3.1.0
 
   ------------------------------------------------------------------------------
 
-  The Jucer is part of the JUCE library - "Jules' Utility Class Extensions"
-  Copyright 2004-6 by Raw Material Software ltd.
+  The Introjucer is part of the JUCE library - "Jules' Utility Class Extensions"
+  Copyright 2004-13 by Raw Material Software Ltd.
 
   ==============================================================================
 */
@@ -30,49 +28,43 @@
 
 //==============================================================================
 widgetBox::widgetBox ()
-    : groupComponent (0),
-      comboBox (0),
-      horizontalSlider (0),
-      rotarySlider (0),
-      toggleButton (0),
-      textButton (0)
 {
-    addAndMakeVisible (groupComponent = new GroupComponent (L"new group",
-                                                            L"group"));
+    addAndMakeVisible (groupComponent = new GroupComponent ("new group",
+                                                            "group"));
 
-    addAndMakeVisible (comboBox = new ComboBox (L"new combo box"));
+    addAndMakeVisible (comboBox = new ComboBox ("new combo box"));
     comboBox->setEditableText (false);
     comboBox->setJustificationType (Justification::centredLeft);
     comboBox->setTextWhenNothingSelected (String::empty);
-    comboBox->setTextWhenNoChoicesAvailable (L"(no choices)");
-    comboBox->addItem (L"Default", 1);
-    comboBox->addItem (L"Old", 2);
-    comboBox->addItem (L"Custom", 3);
+    comboBox->setTextWhenNoChoicesAvailable ("(no choices)");
+    comboBox->addItem ("Default", 1);
+    comboBox->addItem ("Old", 2);
+    comboBox->addItem ("Custom", 3);
     comboBox->addListener (this);
 
-    addAndMakeVisible (horizontalSlider = new Slider (L"new slider"));
+    addAndMakeVisible (horizontalSlider = new Slider ("new slider"));
     horizontalSlider->setRange (0, 10, 0);
     horizontalSlider->setSliderStyle (Slider::LinearHorizontal);
     horizontalSlider->setTextBoxStyle (Slider::TextBoxLeft, false, 80, 20);
     horizontalSlider->addListener (this);
 
-    addAndMakeVisible (rotarySlider = new Slider (L"new slider"));
+    addAndMakeVisible (rotarySlider = new Slider ("new slider"));
     rotarySlider->setRange (0, 10, 0);
     rotarySlider->setSliderStyle (Slider::Rotary);
     rotarySlider->setTextBoxStyle (Slider::TextBoxLeft, false, 80, 20);
     rotarySlider->addListener (this);
 
-    addAndMakeVisible (toggleButton = new ToggleButton (L"new toggle button"));
+    addAndMakeVisible (toggleButton = new ToggleButton ("new toggle button"));
     toggleButton->addListener (this);
 
-    addAndMakeVisible (textButton = new TextButton (L"new button"));
+    addAndMakeVisible (textButton = new TextButton ("new button"));
     textButton->addListener (this);
 
 
     //[UserPreSize]
     //[/UserPreSize]
 
-    setSize (600, 400);
+    setSize (600, 401);
 
 
     //[Constructor] You can add your own custom stuff here..
@@ -85,12 +77,12 @@ widgetBox::~widgetBox()
     //[Destructor_pre]. You can add your own custom destruction code here..
     //[/Destructor_pre]
 
-    deleteAndZero (groupComponent);
-    deleteAndZero (comboBox);
-    deleteAndZero (horizontalSlider);
-    deleteAndZero (rotarySlider);
-    deleteAndZero (toggleButton);
-    deleteAndZero (textButton);
+    groupComponent = nullptr;
+    comboBox = nullptr;
+    horizontalSlider = nullptr;
+    rotarySlider = nullptr;
+    toggleButton = nullptr;
+    textButton = nullptr;
 
 
     //[Destructor]. You can add your own custom destruction code here..
@@ -112,11 +104,11 @@ void widgetBox::paint (Graphics& g)
 void widgetBox::resized()
 {
     groupComponent->setBounds (proportionOfWidth (0.0267f), proportionOfHeight (0.1600f), proportionOfWidth (0.9467f), proportionOfHeight (0.8000f));
-    comboBox->setBounds (proportionOfWidth (0.6933f), proportionOfHeight (0.0798f), proportionOfWidth (0.2500f), proportionOfHeight (0.0595f));
+    comboBox->setBounds (proportionOfWidth (0.6933f), proportionOfHeight (0.0800f), proportionOfWidth (0.2500f), proportionOfHeight (0.0600f));
     horizontalSlider->setBounds (proportionOfWidth (0.2000f), proportionOfHeight (0.3600f), proportionOfWidth (0.2667f), proportionOfHeight (0.1000f));
     rotarySlider->setBounds (proportionOfWidth (0.2000f), proportionOfHeight (0.6400f), proportionOfWidth (0.2533f), proportionOfHeight (0.1400f));
-    toggleButton->setBounds (proportionOfWidth (0.5860f), proportionOfHeight (0.3803f), proportionOfWidth (0.2500f), proportionOfHeight (0.0595f));
-    textButton->setBounds (proportionOfWidth (0.5860f), proportionOfHeight (0.6793f), proportionOfWidth (0.2270f), proportionOfHeight (0.0595f));
+    toggleButton->setBounds (proportionOfWidth (0.5867f), proportionOfHeight (0.3800f), proportionOfWidth (0.2500f), proportionOfHeight (0.0600f));
+    textButton->setBounds (proportionOfWidth (0.5867f), proportionOfHeight (0.6800f), proportionOfWidth (0.2267f), proportionOfHeight (0.0600f));
     //[UserResized] Add your own custom resize handling here..
     //[/UserResized]
 }
@@ -129,22 +121,22 @@ void widgetBox::comboBoxChanged (ComboBox* comboBoxThatHasChanged)
     if (comboBoxThatHasChanged == comboBox)
     {
         //[UserComboBoxCode_comboBox] -- add your combo box handling code here..
-		DBG(String( comboBox->getItemText(comboBox->getSelectedItemIndex()) ))
+		DBG(String(comboBox->getItemText(comboBox->getSelectedItemIndex())));
 		switch(  comboBox->getSelectedItemIndex()  )
 		{
 		case 0:
-			DBG(("Default selected"))
+			DBG(("Default selected"));
 			LookAndFeel::setDefaultLookAndFeel (nullptr);
 			break;
 		case 1:
-			DBG(("Old selected"))
-			LookAndFeel::setDefaultLookAndFeel (&oldLookAndFeel);
+			DBG(("Old selected"));
+			//LookAndFeel::setDefaultLookAndFeel (&oldLookAndFeel);
 			break;
 		case 2:
-			DBG(("Custom selected"))
+			DBG(("Custom selected"));
 			LookAndFeel::setDefaultLookAndFeel (&customLookAndFeel);
 			break;
-		}
+		};
         //[/UserComboBoxCode_comboBox]
     }
 
@@ -200,16 +192,17 @@ void widgetBox::buttonClicked (Button* buttonThatWasClicked)
 
 //==============================================================================
 #if 0
-/*  -- Jucer information section --
+/*  -- Introjucer information section --
 
-    This is where the Jucer puts all of its metadata, so don't change anything in here!
+    This is where the Introjucer stores the metadata that describe this GUI layout, so
+    make changes in here at your peril!
 
 BEGIN_JUCER_METADATA
 
 <JUCER_COMPONENT documentType="Component" className="widgetBox" componentName=""
                  parentClasses="public Component" constructorParams="" variableInitialisers=""
-                 snapPixels="8" snapActive="1" snapShown="1" overlayOpacity="0.330000013"
-                 fixedSize="1" initialWidth="600" initialHeight="400">
+                 snapPixels="8" snapActive="1" snapShown="1" overlayOpacity="0.330"
+                 fixedSize="1" initialWidth="600" initialHeight="401">
   <BACKGROUND backgroundColour="ffffffff"/>
   <GROUPCOMPONENT name="new group" id="a93cd27e329518c7" memberName="groupComponent"
                   virtualName="" explicitFocusOrder="0" pos="2.667% 16% 94.667% 80%"
@@ -239,3 +232,7 @@ BEGIN_JUCER_METADATA
 END_JUCER_METADATA
 */
 #endif
+
+
+//[EndFile] You can add extra defines here...
+//[/EndFile]

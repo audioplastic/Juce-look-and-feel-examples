@@ -26,31 +26,13 @@
 #include "../../JuceLibraryCode/JuceHeader.h"
 #include "LookAndFeelCustom.h"
 
-//BEGIN_JUCE_NAMESPACE
 
-
-/*#include "../buttons/juce_TextButton.h"
-#include "../buttons/juce_ToggleButton.h"
-#include "../buttons/juce_ShapeButton.h"
-#include "../buttons/juce_ArrowButton.h"
-#include "../windows/juce_AlertWindow.h"
-#include "../buttons/juce_DrawableButton.h"
-#include "../windows/juce_DocumentWindow.h"
-#include "../layout/juce_ScrollBar.h"
-#include "../controls/juce_Slider.h"
-#include "../controls/juce_ProgressBar.h"
-#include "../controls/juce_ListBox.h"
-#include "../filebrowser/juce_FilenameComponent.h"
-#include "../juce_Desktop.h"
-#include "../../graphics/drawables/juce_DrawableComposite.h"
-#include "../../graphics/drawables/juce_DrawablePath.h"
-#include "../menus/juce_MenuBarComponent.h"*/
 
 
 //==============================================================================
 LookAndFeelCustom::LookAndFeelCustom()
 {
-    setColour (TextButton::buttonColourId,          Colour (0xffbbbbff));
+    setColour (TextButton::buttonColourId,          Colours::yellow);
     setColour (ListBox::outlineColourId,            findColour (ComboBox::outlineColourId));
     setColour (ScrollBar::thumbColourId,            Colour (0xffbbbbdd));
     setColour (ScrollBar::backgroundColourId,       Colours::transparentBlack);
@@ -64,7 +46,7 @@ LookAndFeelCustom::LookAndFeelCustom()
     setColour (PopupMenu::highlightedTextColourId,        Colours::black);
     setColour (TextEditor::focusedOutlineColourId,  findColour (TextButton::buttonColourId));
 
-    scrollbarShadow.setShadowProperties (2.2f, 0.5f, 0, 0);
+    //scrollbarShadow.setShadowProperties (2.2f, 0.5f, 0, 0);
 }
 
 LookAndFeelCustom::~LookAndFeelCustom()
@@ -101,8 +83,14 @@ void LookAndFeelCustom::drawRotarySlider	(	Graphics & 	g,
     const float ry = centreY - radius - 1.0f;
 
 	g.drawImage(myStrip,	
-				(int)rx,	(int)ry,						2*(int)radius,			2*(int)radius,   //Dest 
-				0,			frameIdx*myStrip.getWidth(),	myStrip.getWidth(),		myStrip.getWidth()); //Source
+				(int)rx,
+                (int)ry,
+                2*(int)radius,
+                2*(int)radius,   //Dest
+				0,
+                frameIdx*myStrip.getWidth(),
+                myStrip.getWidth(),
+                myStrip.getWidth()); //Source
 
 }
 									 
@@ -222,7 +210,7 @@ void LookAndFeelCustom::drawProgressBar (Graphics& g, ProgressBar& progressBar,
 {
     if (progress < 0 || progress >= 1.0)
     {
-        LookAndFeel::drawProgressBar (g, progressBar, width, height, progress, textToShow);
+		LookAndFeel_V3::drawProgressBar (g, progressBar, width, height, progress, textToShow);
     }
     else
     {
@@ -429,12 +417,12 @@ void LookAndFeelCustom::drawComboBox (Graphics& g, int width, int height,
     }
 }
 
-const Font LookAndFeelCustom::getComboBoxFont (ComboBox& box)
-{
-    Font f (jmin (15.0f, box.getHeight() * 0.85f));
-    f.setHorizontalScale (0.9f);
-    return f;
-}
+//const Font LookAndFeelCustom::getComboBoxFont (ComboBox& box)
+//{
+//    Font f (jmin (15.0f, box.getHeight() * 0.85f));
+//    f.setHorizontalScale (0.9f);
+//    return f;
+//}
 
 //==============================================================================
 static void drawTriangle (Graphics& g, float x1, float y1, float x2, float y2, float x3, float y3, const Colour& fill, const Colour& outline) noexcept
@@ -533,7 +521,8 @@ void LookAndFeelCustom::drawLinearSlider (Graphics& g,
     }
 }
 
-Button* LookAndFeelCustom::createSliderButton (const bool isIncrement)
+Button* LookAndFeelCustom::createSliderButton(Slider&, bool isIncrement)
+
 {
     if (isIncrement)
         return new ArrowButton ("u", 0.75f, Colours::white.withAlpha (0.8f));
@@ -541,7 +530,8 @@ Button* LookAndFeelCustom::createSliderButton (const bool isIncrement)
         return new ArrowButton ("d", 0.25f, Colours::white.withAlpha (0.8f));
 }
 
-ImageEffectFilter* LookAndFeelCustom::getSliderEffect()
+ImageEffectFilter* LookAndFeelCustom::getSliderEffect(Slider&)
+
 {
     return &scrollbarShadow;
 }

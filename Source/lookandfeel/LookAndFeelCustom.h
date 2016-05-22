@@ -34,7 +34,7 @@
     The original Juce look-and-feel.
 
 */
-class /*JUCE_API*/  LookAndFeelCustom    : public LookAndFeel
+class /*JUCE_API*/  LookAndFeelCustom    : public LookAndFeel_V3
 {
 public:
     //==============================================================================
@@ -132,7 +132,7 @@ public:
                                int buttonW, int buttonH,
                                ComboBox& box);
 
-    virtual const Font getComboBoxFont (ComboBox& box);
+    //virtual const Font getComboBoxFont (ComboBox& box);
 
     //==============================================================================
     virtual void drawLinearSlider (Graphics& g,
@@ -146,9 +146,11 @@ public:
 
     virtual int getSliderThumbRadius (Slider& slider);
 
-    virtual Button* createSliderButton (bool isIncrement);
+	virtual Button* createSliderButton(Slider&, bool isIncrement);
 
-    virtual ImageEffectFilter* getSliderEffect();
+
+	virtual ImageEffectFilter* getSliderEffect(Slider&);
+
 
     //==============================================================================
     virtual void drawCornerResizer (Graphics& g,

@@ -12,6 +12,7 @@
 #define __MAINWINDOW_H_935BBEE2__
 
 #include "../JuceLibraryCode/JuceHeader.h"
+#include "widgetBox.h"
 
 
 //==============================================================================
@@ -24,15 +25,8 @@ public:
 
     void closeButtonPressed();
 
-
-    /* Note: Be careful when overriding DocumentWindow methods - the base class
-       uses a lot of them, so by overriding you might break its functionality.
-       It's best to do all your work in you content component instead, but if
-       you really have to override any DocumentWindow methods, make sure your
-       implementation calls the superclass's method.
-    */
-
 private:
+    ScopedPointer<widgetBox> contentComponent;
     //==============================================================================
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (MainAppWindow)
 };
